@@ -41,7 +41,7 @@ Earlier versions of VS don't support Azure Functions.
   
 2. Create a an Azure Cosmos DB 
   - We are using CosmosDB to manage our Tags
-  - For the cosmosDB collection - choose fixes as opposed to unlimited (with fixed you don't require a partition key)
+  - For the cosmosDB collection - choose fixed as opposed to unlimited (with fixed you don't require a partition key)
   
 3. Fill out the required Keys in the MobileCenterPush and MobileCenterPush.Shared projects
   - The keys for CosmosDB can be found in the Keys section of your CosmosDB Resource
