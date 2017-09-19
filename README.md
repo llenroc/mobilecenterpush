@@ -19,10 +19,6 @@ Earlier versions of VS don't support Azure Functions.
 
 - Mobile Center push maps the FCM (google firebase) and APNS (apple push notifications) registration tokens to the installationID of your app. There is a unique ID for each time an app gets installed on a user's device through mobile center. With this project you can use the mobile center APIs to send out push notifications to installationIDs. 
 
-- However, Mobile Center doens't currently support Tags - which is a feature of Notification Hubs that isn't implemented yet in Mobile Center Push. It does support audiences and custom properties, but the audiences feature was really intended for sending notifications from the portal and not through the API. The custom properties are also not "Push-specific" - but rather global in mobile center - meaning that they will show in your analytics as well: https://docs.microsoft.com/en-us/mobile-center/push/audiences
-
-- For this reason, we'll be managing our own tags in a simple document-based database that contains the Tag, along with a list of installationIds for devices that are subscribed to that tag. 
-
 ## Getting Started
 
 ### Mobile Center setup:
